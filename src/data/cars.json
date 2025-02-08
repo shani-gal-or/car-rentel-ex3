@@ -8,9 +8,9 @@
       "transmission": "Manual",
       "price": 99,
       "images": [
-        "../public/images/koenigsegg1.jpg",
-        "../public/images/koenigsegg1.jpg",
-        "../public/images/koenigsegg1.jpg"
+        "koenigsegg1.jpg",
+        "koenigsegg1.jpg",
+        "koenigsegg1.jpg"
       ]
     },
     {
@@ -22,9 +22,9 @@
       "transmission": "Manual",
       "price": 82,
       "images": [
-        "../public/images/nissan_gt_r1.jpg",
-        "../public/images/nissan_gt_r1.jpg",
-        "../public/images/nissan_gt_r1.jpg"
+        "nissan_gt_r1.jpg",
+        "nissan_gt_r1.jpg",
+        "nissan_gt_r1.jpg"
       ]
     },
     {
@@ -36,9 +36,9 @@
       "transmission": "Manual",
       "price": 99,
       "images": [
-        "../public/images/rolls_royce1.jpg",
-        "../public/images/rolls_royce1.jpg",
-        "../public/images/rolls_royce1.jpg"
+        "rolls_royce1.jpg",
+        "rolls_royce1.jpg",
+        "rolls_royce1.jpg"
       ]
     },
     {
@@ -50,9 +50,9 @@
       "transmission": "Manual",
       "price": 76,
       "images": [
-        "../public/images/all_new_rush1.jpg",
-        "../public/images/all_new_rush1.jpg",
-        "../public/images/all_new_rush1.jpg"
+        "all_new_rush1.jpg",
+        "all_new_rush1.jpg",
+        "all_new_rush1.jpg"
       ]
     },
     {
@@ -64,9 +64,9 @@
       "transmission": "Manual",
       "price": 80,
       "images": [
-        "../public/images/cr_v1.jpg",
-        "../public/images/cr_v1.jpg",
-        "../public/images/cr_v1.jpg"
+        "cr_v1.jpg",
+        "cr_v1.jpg",
+        "cr_v1.jpg"
       ]
     },
     {
@@ -78,9 +78,9 @@
       "transmission": "Manual",
       "price": 74,
       "images": [
-        "../public/images/all_new_terios1.jpg",
-        "../public/images/all_new_terios1.jpg",
-        "../public/images/all_new_terios1.jpg"
+        "all_new_terios1.jpg",
+        "all_new_terios1.jpg",
+        "all_new_terios1.jpg"
       ]
     },
     {
@@ -92,9 +92,9 @@
       "transmission": "Auto",
       "price": 76,
       "images": [
-        "../public/images/mg_zx_exclusive1.jpg",
-        "../public/images/mg_zx_exclusive1.jpg",
-        "../public/images/mg_zx_exclusive1.jpg"
+        "mg_zx_exclusive1.jpg",
+        "mg_zx_exclusive1.jpg",
+        "mg_zx_exclusive1.jpg"
       ]
     },
     {
@@ -106,9 +106,9 @@
       "transmission": "Manual",
       "price": 80,
       "images": [
-        "../public/images/new_mg_zs1.jpg",
-        "../public/images/new_mg_zs1.jpg",
-        "../public/images/new_mg_zs1.jpg"
+        "new_mg_zs1.jpg",
+        "new_mg_zs1.jpg",
+        "new_mg_zs1.jpg"
       ]
     },
     {
@@ -120,9 +120,9 @@
       "transmission": "Auto",
       "price": 74,
       "images": [
-        "../public/images/mg_zx_excite1.jpg",
-        "../public/images/mg_zx_excite1.jpg",
-        "../public/images/mg_zx_excite1.jpg"
+        ".mg_zx_excite1.jpg",
+        "mg_zx_excite1.jpg",
+        "mg_zx_excite1.jpg"
       ]
     }
   ]
