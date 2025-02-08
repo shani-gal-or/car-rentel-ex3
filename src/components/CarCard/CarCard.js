@@ -44,7 +44,7 @@ const CarCard = ({ car }) => {
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px", gap: "15px" }}>
           <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
             <LocalGasStationIcon sx={{ color: figmaIconColor, fontSize: "20px" }} /> {/* ✅ Light blue icon */}
-            <Typography variant="body2" sx={{ color: figmaIconColor }}>{car.fuel}L</Typography>
+            <Typography variant="body2" sx={{ color: figmaIconColor }}>{car.fuel}</Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: "5px" }}>
             <SettingsIcon sx={{ color: figmaIconColor, fontSize: "20px" }} /> {/* ✅ Light blue icon */}
@@ -58,14 +58,14 @@ const CarCard = ({ car }) => {
 
         {/* Price & Rent Now Button */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px" }}>
-          <Typography variant="h6" color="primary" sx={{ flex: 1, textAlign: "left" }}>
+          <Typography variant="h6" color="primary" sx={{ flex: 1, textAlign: "left", color: "#3563E9" }}>
             ${car.price}/day
           </Typography>
           {/* ✅ Rent Now Button (Does Nothing) */}
           <Button
             variant="contained"
             color="primary"
-            sx={{ flex: 1, borderRadius: "8px", textTransform: "none" }}
+            sx={{ flex: 1, backgroundColor: "#3563E9",borderRadius: "8px", textTransform: "none" }}
             onClick={() => { }} // ✅ Does nothing
           >
             Rent Now

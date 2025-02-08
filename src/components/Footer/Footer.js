@@ -19,7 +19,7 @@ const Footer = () => {
                 <Grid2 container spacing={3} justifyContent="space-between" alignItems="flex-start">
                     {/* Left Section: Logo & Description */}
                     <Grid2 xs={12} sm={4} sx={{ textAlign: "left" }}>
-                        <Typography variant="h5" fontWeight="bold" color="#1976d2" gutterBottom>
+                        <Typography variant="h5" fontWeight="bold" color="#3563E9" gutterBottom>
                             ShenCarCar
                         </Typography>
                         <Typography variant="body2" sx={{ color: "#6B7280", maxWidth: "250px" }}>
