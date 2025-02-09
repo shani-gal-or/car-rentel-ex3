@@ -25,13 +25,7 @@ const CarPage = () => {
       {/* Left Section: Car Image and Thumbnails */}
       <Box sx={{ flex: 1 }}>
         {/* Large Featured Image */}
-        <Box sx={{ backgroundColor: "#3563E9", padding: "16px", borderRadius: "8px", textAlign: "center" }}>
-          <Typography variant="h6" sx={{ color: "white", marginBottom: "8px" }}>
-            Sports car with the best design and acceleration
-          </Typography>
-          <Typography sx={{ color: "white", marginBottom: "12px" }}>
-            Safety and comfort while driving a futuristic and elegant sports car.
-          </Typography>
+        <Box sx={{ backgroundColor: "white", padding: "16px", borderRadius: "8px", textAlign: "center" }}>
           <img src={`${process.env.PUBLIC_URL}/images/${selectedImage}`} alt={car.name} style={{ width: "100%" }} />
         </Box>
 

@@ -10,7 +10,7 @@ const FavoritesPage = () => {
 
   // Dummy filters (filters don't affect favorites)
   const filters = {
-    types: ["Sport", "SUV", "MPV", "Sedan", "Coupe", "Hatchback"],
+    types: ["Sport", "SUV", "Hatchback"],
     capacity: ["2", "4", "6"],
     price: 100,
   };

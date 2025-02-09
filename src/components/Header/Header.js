@@ -8,7 +8,8 @@ import { styled } from "@mui/material/styles";
 const SearchContainer = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: "25px", // Rounded rectangle
-    backgroundColor: "#F3F4F6", // Light gray background
+    backgroundColor: "white", 
+    border: "1px solid #C3D4E9",  // Light gray border ✅
     display: "flex",
     alignItems: "center",
     padding: "5px 15px",

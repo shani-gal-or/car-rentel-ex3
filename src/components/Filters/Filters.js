@@ -45,7 +45,7 @@ const Filter = ({ filters, setFilters, minPrice, maxPrice, carsData }) => {
       {/* Car Type Filter */}
       <Typography variant="subtitle1" sx={{ color: "#90A3BF", font: "Plus Jakarta Sans", fontSize: "12px" }} mt={2}>TYPE</Typography>
       <FormGroup>
-        {["Sport", "SUV", "MPV", "Sedan", "Coupe", "Hatchback"].map((type) => (
+        {["Sport", "SUV", "Hatchback"].map((type) => (
           <FormControlLabel
             key={type}
             control={<Checkbox checked={filters.types.includes(type)} onChange={handleTypeChange} name={type}

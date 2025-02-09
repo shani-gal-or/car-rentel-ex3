@@ -17,18 +17,18 @@ const CarCard = ({ car }) => {
   const figmaIconColor = "#90A3BF";
 
   return (
-    <Card sx={{ cursor: "pointer", borderRadius: "12px", boxShadow: 3 }}>
-      {/* Clicking on Image Navigates to Car Details Page */}
-      <Link to={`/car/${car.id}`} style={{ textDecoration: "none" }}>
-        <CardMedia
-          component="img"
-          height="150"
-          // image={`/images/${car.image}`}
-          image={`${process.env.PUBLIC_URL}/images/${car.image}`}
-          alt={car.name}
-          sx={{ cursor: "pointer" }}
-        />
-      </Link>
+    <Card sx={{
+      cursor: "pointer",
+      borderRadius: "12px",
+      boxShadow: 3,
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      height: "100%",  // ✅ Ensures cards have the same height
+      width: "100%",  // ✅ Prevents shrinking
+      maxWidth: "320px"  // ✅ Matches Figma width
+    }}>
+
       <CardContent>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Box>
@@ -43,6 +43,28 @@ const CarCard = ({ car }) => {
             <FavoriteIcon />
           </IconButton>
         </Box>
+
+        {/* Clicking on Image Navigates to Car Details Page */}
+        <Link to={`/car/${car.id}`} style={{ textDecoration: "none" }}>
+          <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "180px",  // ✅ Ensures equal height for all images
+            overflow: "hidden",  // ✅ Prevents images from overflowing
+          }}>
+            <CardMedia
+              component="img"
+              image={`${process.env.PUBLIC_URL}/images/${car.image}`}
+              alt={car.name}
+              sx={{
+                maxHeight: "100%",
+                maxWidth: "90%",
+                objectFit: "contain"  // ✅ Ensures the images are scaled correctly
+              }}
+            />
+          </Box>
+        </Link>
 
         {/* Car Info (Fuel, Transmission, Capacity) */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px", gap: "15px" }}>
