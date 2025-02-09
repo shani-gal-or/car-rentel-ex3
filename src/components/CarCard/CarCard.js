@@ -6,6 +6,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import PeopleIcon from "@mui/icons-material/People";
 import { useFavorites } from "../../context/FavoritesContext";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CarCard = ({ car }) => {
   const { favorites, toggleFavorite } = useFavorites();
@@ -18,13 +19,16 @@ const CarCard = ({ car }) => {
   return (
     <Card sx={{ cursor: "pointer", borderRadius: "12px", boxShadow: 3 }}>
       {/* Clicking on Image Navigates to Car Details Page */}
-      <CardMedia
-        component="img"
-        height="150"
-        image={`/images/${car.image}`}
-        alt={car.name}
-        onClick={() => navigate(`/car/${car.id}`)}
-      />
+      <Link to={`/car/${car.id}`} style={{ textDecoration: "none" }}>
+        <CardMedia
+          component="img"
+          height="150"
+          // image={`/images/${car.image}`}
+          image={`${process.env.PUBLIC_URL}/images/${car.image}`}
+          alt={car.name}
+          sx={{ cursor: "pointer" }}
+        />
+      </Link>
       <CardContent>
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Box>

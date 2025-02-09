@@ -7,11 +7,12 @@
       "fuel": "90L",
       "transmission": "Manual",
       "price": 99,
-      "images": [
-        "koenigsegg1.jpg",
+      "image": "koenigsegg1.jpg",
+      "thumbnails": [
         "koenigsegg1.jpg",
         "koenigsegg1.jpg"
-      ]
+      ],
+      "description": "A masterpiece of engineering, the Koenigsegg delivers mind-blowing speed and aerodynamic precision. Designed for those who crave extreme performance and a luxurious driving experience."
     },
     {
       "id": 2,
@@ -21,11 +22,12 @@
       "fuel": "80L",
       "transmission": "Manual",
       "price": 82,
-      "images": [
-        "nissan_gt_r1.jpg",
+      "image": "nissan_gt_r1.jpg",
+      "thumbnails" : [
         "nissan_gt_r1.jpg",
         "nissan_gt_r1.jpg"
-      ]
+      ],
+      "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the 'race track'."
     },
     {
       "id": 3,
@@ -35,11 +37,12 @@
       "fuel": "90L",
       "transmission": "Manual",
       "price": 99,
-      "images": [
-        "rolls_royce1.jpg",
+      "image": "rolls_royce1.jpg",
+      "thumbnails": [
         "rolls_royce1.jpg",
         "rolls_royce1.jpg"
-      ]
+      ],
+      "description": "An icon of elegance, the Rolls-Royce Phantom offers an unparalleled ride of luxury and sophistication. Featuring handcrafted interiors and whisper-quiet comfort, it's the pinnacle of automotive excellence."
     },
     {
       "id": 4,
@@ -49,11 +52,12 @@
       "fuel": "70L",
       "transmission": "Manual",
       "price": 76,
-      "images": [
-        "all_new_rush1.jpg",
+      "image": "all_new_rush1.jpg",
+      "thumbnails": [
         "all_new_rush1.jpg",
         "all_new_rush1.jpg"
-      ]
+      ],
+      "description": "Perfect for adventurous families, the All New Rush blends rugged durability with modern comfort. Its spacious interior and fuel efficiency make it ideal for long road trips and city drives alike."
     },
     {
       "id": 5,
@@ -63,11 +67,12 @@
       "fuel": "80L",
       "transmission": "Manual",
       "price": 80,
-      "images": [
-        "cr_v1.jpg",
+      "image": "cr_v1.jpg",
+      "thumbnails": [
         "cr_v1.jpg",
         "cr_v1.jpg"
-      ]
+      ],
+      "description": "A versatile and fuel-efficient crossover, the CR-V is built for comfort and practicality. With its responsive handling and spacious design, it’s the ultimate companion for everyday driving."
     },
     {
       "id": 6,
@@ -77,11 +82,12 @@
       "fuel": "70L",
       "transmission": "Manual",
       "price": 74,
-      "images": [
-        "all_new_terios1.jpg",
+      "image": "all_new_terios1.jpg",
+      "thumbnails": [
         "all_new_terios1.jpg",
         "all_new_terios1.jpg"
-      ]
+      ],
+      "description": "A reliable SUV with a touch of adventure, the All New Terios is designed for both urban and off-road terrains. Its high ground clearance and comfortable seating make every trip enjoyable."
     },
     {
       "id": 7,
@@ -91,11 +97,12 @@
       "fuel": "70L",
       "transmission": "Auto",
       "price": 76,
-      "images": [
-        "mg_zx_exclusive1.jpg",
+      "image": "mg_zx_exclusive1.jpg",
+      "thumbnails": [
         "mg_zx_exclusive1.jpg",
         "mg_zx_exclusive1.jpg"
-      ]
+      ], 
+      "description": "A stylish and tech-packed hatchback, the MG ZX Exclusive delivers a smooth ride with impressive efficiency. Perfect for city drivers who seek both performance and affordability."
     },
     {
       "id": 8,
@@ -105,11 +112,12 @@
       "fuel": "80L",
       "transmission": "Manual",
       "price": 80,
-      "images": [
-        "new_mg_zs1.jpg",
+      "image": "new_mg_zs1.jpg",
+      "thumbnails": [
         "new_mg_zs1.jpg",
         "new_mg_zs1.jpg"
-      ]
+      ],
+      "description": "A modern crossover designed for young professionals, the New MG ZS offers a sleek design with advanced safety features. Its fuel-efficient engine makes it a smart choice for daily commuting."
     },
     {
       "id": 9,
@@ -119,11 +127,12 @@
       "fuel": "70L",
       "transmission": "Auto",
       "price": 74,
-      "images": [
-        "mg_zx_excite1.jpg",
+      "image": "mg_zx_excite1.jpg",
+      "thumbnails": [
         "mg_zx_excite1.jpg",
         "mg_zx_excite1.jpg"
-      ]
+      ],
+      "description": "With a bold design and lively performance, the MG ZX Excite is built for drivers who love a thrilling ride. Packed with smart technology and a dynamic driving experience."
     }
   ]
   
