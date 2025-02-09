@@ -1,18 +1,22 @@
 import React, { createContext, useState, useContext } from "react";
 
-// Create the Context
+// Create Context
 const FavoritesContext = createContext();
+
+// Custom Hook to Use Favorites
+export const useFavorites = () => {
+  return useContext(FavoritesContext);
+};
 
 // Provider Component
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
-  // Function to toggle favorite status
   const toggleFavorite = (car) => {
     setFavorites((prevFavorites) =>
       prevFavorites.some((fav) => fav.id === car.id)
-        ? prevFavorites.filter((fav) => fav.id !== car.id) // Remove from favorites
-        : [...prevFavorites, car] // Add to favorites
+        ? prevFavorites.filter((fav) => fav.id !== car.id) // Remove if already favorited
+        : [...prevFavorites, car] // Add if not in favorites
     );
   };
 
@@ -21,9 +25,4 @@ export const FavoritesProvider = ({ children }) => {
       {children}
     </FavoritesContext.Provider>
   );
-};
-
-// Custom Hook to Use Context
-export const useFavorites = () => {
-  return useContext(FavoritesContext);
 };

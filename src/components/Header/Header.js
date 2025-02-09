@@ -32,6 +32,8 @@ const Header = ({ onSearch }) => {
         setQuery(e.target.value);
         if (e.target.value.length >= 2) {
             onSearch(e.target.value); // Send search query to parent component
+        } else {
+            onSearch(""); // ✅ Reset search when input is cleared
         }
     };
 

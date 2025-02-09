@@ -13,7 +13,7 @@ const CarCard = ({ car }) => {
   const isFavorite = favorites.some((fav) => fav.id === car.id);
 
   // Define Figma color
-  const figmaIconColor = "#90A3BF"; 
+  const figmaIconColor = "#90A3BF";
 
   return (
     <Card sx={{ cursor: "pointer", borderRadius: "12px", boxShadow: 3 }}>
@@ -57,15 +57,40 @@ const CarCard = ({ car }) => {
         </Box>
 
         {/* Price & Rent Now Button */}
-        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px" }}>
-          <Typography variant="h6" color="primary" sx={{ flex: 1, textAlign: "left", color: "#3563E9" }}>
-            ${car.price}/day
-          </Typography>
-          {/* ✅ Rent Now Button (Does Nothing) */}
+        <Box sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+          gap: "12px",
+          marginTop: "16px",  // ✅ Adds space above
+          marginBottom: "16px" // ✅ Adds space below
+        }}>
+          {/* Price Section */}
+          <Box sx={{ display: "flex", alignItems: "baseline", flexShrink: 0 }}>
+            <Typography sx={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1E293B" }}>
+              ${car.price.toFixed(2)}
+            </Typography>
+            <Typography sx={{ fontSize: "1.5rem", fontWeight: "bold", color: "#1E293B", marginLeft: "4px" }}>
+              /
+            </Typography>
+            <Typography sx={{ fontSize: "1rem", fontWeight: "medium", color: "#90A3BF", marginLeft: "2px" }}>
+              day
+            </Typography>
+          </Box>
+
+          {/* Rent Now Button */}
           <Button
             variant="contained"
             color="primary"
-            sx={{ flex: 1, backgroundColor: "#3563E9",borderRadius: "8px", textTransform: "none" }}
+            sx={{
+              backgroundColor: "#3563E9",
+              borderRadius: "8px",
+              textTransform: "none",
+              padding: "8px 16px",
+              minWidth: "110px", // ✅ Prevents button from shrinking too much
+              maxWidth: "150px", // ✅ Prevents button from growing too much
+            }}
             onClick={() => { }} // ✅ Does nothing
           >
             Rent Now

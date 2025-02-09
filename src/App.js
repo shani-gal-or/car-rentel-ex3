@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
 import Header from "./components/Header/Header";
@@ -7,11 +7,13 @@ import { FavoritesProvider } from "./context/FavoritesContext"; // ✅ Import Co
 import "./App.css";
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState(""); // ✅ Store search query globally
+
   return (
-    <FavoritesProvider> {/* ✅ Wrap the app with FavoritesProvider */}
+    <FavoritesProvider>
       <Router>
-        <Header />
-        <AppRouter />
+        <Header onSearch={setSearchQuery} /> {/* ✅ Pass setSearchQuery to Header */}
+        <AppRouter searchQuery={searchQuery} /> {/* ✅ Pass searchQuery to AppRouter */}
         <Footer />
       </Router>
     </FavoritesProvider>
